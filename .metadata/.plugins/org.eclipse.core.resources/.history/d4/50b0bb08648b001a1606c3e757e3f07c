@@ -1,0 +1,42 @@
+package hust.soict.hedspi.aims.media;
+
+public abstract class Media implements Comparable<Media>{
+	protected String title;
+	protected String category;
+	protected float cost;
+	protected int id;
+	
+	public Media() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public String getTitle() {
+		return title;
+	}
+	
+	public String getCategory() {
+		return category;
+	}
+	
+	public float getCost() {
+		return cost;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public abstract void print();
+	
+	@Override
+	public boolean equals(Object obj) {
+		Media temp = (Media)obj;
+		if(this.id == temp.getId())
+			return true;
+		return false;
+	}
+}
