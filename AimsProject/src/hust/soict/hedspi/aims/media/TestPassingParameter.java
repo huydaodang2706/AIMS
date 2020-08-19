@@ -3,7 +3,7 @@ package hust.soict.hedspi.aims.media;
 public class TestPassingParameter {
 	public static void main(String[] args) {
 		Book book = new Book(null, null, null, 0);
-		book.setContent("Em la mot thien than do em iu thien than ma");
+		book.setContent("ai biet dc nao ban");
 		book.processContent();
 		System.out.println(book.toString());
 	}
